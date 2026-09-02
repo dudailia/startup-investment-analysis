@@ -1,0 +1,35 @@
+# Secrets — no credential should ever reach this repo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.json.key
+.secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.virtual_documents/
+.pytest_cache/
+*.egg-info/
+
+# Data — the notebook downloads its inputs at runtime; don't commit copies
+*.csv
+*.zip
+*.parquet
+data/
+
+# Notebook / analysis output
+*.png
+*.pdf
+!README*.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
